@@ -1,0 +1,240 @@
+.body {
+    margin: 0;
+}
+.body_dos{
+  background-color: white;
+}
+
+@font-face {
+  font-family: 'Morebi Rounded Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Morebi Rounded Regular'), url('GT-CANARY - MorebiRounded-Regular.woff') format('woff');
+  }
+@font-face {
+  font-family: Abel-regular;
+  src: url(../assets/fonts/Abel-Regular.ttf);
+}
+
+html { 
+  height: 100%;
+}
+.grid-container > *{
+  padding: 0;
+ 
+}
+.grid-container{
+  display: grid;
+  min-height: 100%;
+  grid-template-areas: 
+  "header"
+   "barra"
+   "partePrincipal"
+   "nuevos_productos"
+   "footer";
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(4,auto);
+  
+}
+
+
+
+/* Barra de navegacion y logo */
+ .header {
+  grid-area: header;
+  grid-column-start: 1;
+  grid-column-end: -1;
+   background-color: rgb(243,231,97);
+  color: black;
+  font-size: 20px;
+  font-family: Abel-Regular;
+  font-weight: bold;
+  padding: 0;
+  line-height: 1.5rem;
+  top: 1000%;
+  height: 100px;
+  overflow: hidden;
+  } 
+ .header a{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  }
+  .enlace { 
+  padding: 20px 50px;
+  width: 100px;
+  justify-items: center;
+  justify-content: center;
+  }
+  
+  .header,.barra{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  }
+  .barra ul{
+  float: right;
+  list-style: none;
+  }
+  .barra ul li{
+  display: inline-block;
+  margin: 0 5px;
+  }
+  
+  .checkbtn { 
+      float: right;
+      font-size: 30px;
+      margin-right: 30px;
+      cursor: pointer;
+      display: none;
+  }
+/* Fin de barra de navegacion */
+
+/* inicio */
+.partePrincipal {
+  grid-area: partePrincipal;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row: 2;
+  color: white;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(../assets/entrenamiento7.jpg) ;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+}
+.img_principal { 
+   position: absolute;
+   left: 65%;
+   
+}
+.img_principal h1{
+  font-size: 60px;
+  font-family: Morebi Rounded Regular;
+  font-weight: bolder;
+  justify-content: center;
+  justify-items: center;
+}
+.img_principal button{
+  text-align: center;
+
+}
+
+.nuevos {
+  grid-area: nuevos_productos;
+  grid-column-start:1;
+  grid-column-end: 4;
+  grid-row: 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.nuevos .carta {
+  padding: 30px;
+  margin: 120px 30px;
+  border: 1px solid #ccc;
+  height: 450px;
+  width: 400px;
+
+}
+.container {
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.img {
+  width: 300px;
+  height: 330px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.nuevos .titulo {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  font-family: Morebi Rounded Regular;
+  font-weight: bold;
+}
+.inferior h3{
+  position: relative;
+  bottom: 0;
+  font-family: Abel-Regular;
+}
+button a:active{
+  background: black ;
+  color: white;
+}
+button {
+  display: inline-flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: Morebi Rounded Regular;
+  padding: 10px 10px;
+  height: 50px;
+  line-height: 1.5rem;
+  border: 1px solid black;
+  background:rgb(243,231,97) ;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+
+/* fin de Inicio */
+
+
+
+
+
+
+
+
+/* Calzados */
+.main{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  font-family: Morebi Rounded Regular;
+  font-weight: bold;
+}
+
+
+/* fin de indumentaria */
+
+
+
+
+
+/* Comienzo del footer */
+.footer {
+  grid-area: footer;
+  grid-column-start:1;
+  grid-column-end: 4;
+  grid-row: 4;
+  background-color: rgb(243,231,97);
+  color: black;
+  font-family: Montserrat;
+  font-size: 1rem;
+  text-align: center;
+
+}
+.footer a{
+  text-decoration: none;
+  color: black;
+}
+.footer ul{
+  list-style: none;
+}
+/* Fin del footer */

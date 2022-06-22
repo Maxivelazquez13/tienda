@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primera Entrega - Contacto</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="icon" sizes="15x15" href="./assets/logo.png">
+  <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+</head>
+<body class="body">
+  <!-- Cabezera de pagina -->
+  <header class="header">
+    <!-- logo de mi pagina -->
+    <h1>Logo de mi tienda</h1>
+    <!-- Fin de logo -->
+    <!-- Barra de navegacion -->
+    <nav class="barra">
+        <!-- Enlaces de barra de navegacion -->
+        <ul>
+            <li><a href="./../index.html">Inicio</a></li>
+            <li><a href="./shod.html">Calzado</a></li>
+            <li><a href="./dress.html">Indumentaria</a></li>
+            <li><a href="./about.html">Sobre Nosotros</a></li>
+            <li><a href="./Contact.html">Contacto</a></li>
+            <li><a href="https://www.instagram.com" target="_blank">Seguinos en Instagram!</a></li>
+        </ul>
+        <!-- Fin de enclaces de barra de navegacion -->
+    </nav>
+    <!-- Fin de barra de navegacion -->
+    </header>
+    <section>
+        <form>
+          <label for="nombre">
+            Nombre
+          </label>
+          <br />
+          <input type="text" id="nombre" />
+          <br />
+          <label for="apellido">
+            Apellido
+          </label>
+          <br />
+          <input type="text" id="apellido" />
+          <br />
+          <label for="telefono">
+            Telefono
+          </label>
+          <br />
+          <input type="tel" id="telefono" placeholder="Ingresa tu telefono" maxlength="10" />
+          <br />
+          <label for="mail">
+            e-mail
+          </label>
+          <br />
+          <input type="email" id="mail" placeholder="Ingresa tu email" />
+          <br />
+          <label>
+            Localidad
+          </label>
+          <br />
+          <select>
+            <option selected="selected">Selecciona una departamento</option>
+            <option>Colonia</option>
+            <option>Montevideo</option>
+            <option>Paysandu</option>
+            <option>Rio negro</option>
+          </select>
+          <br />
+          <label>
+            Que te parecio la pagina?
+          </label>
+          <br />
+          <span>buena</span>
+          <input type="radio" name="opcion" value="buena" />
+          <span>no es comoda</span>
+          <input type="radio" name="opcion" value="no es comoda" />
+          <span>accesible</span>
+          <input type="radio" name="opcion" value="accesible" />
+          <br />
+          <label>
+            Quieres recibir informacion con los ultimos calzados?
+          </label>
+          <br />
+          <span>Si</span>
+          <input type="checkbox" name="aceptar" />
+          <span>Acepto los terminos y condiciones</span>
+          <input type="checkbox" name="aceptar" checked="checked" />
+          <br />
+          <label for="comentarios">
+            Alguna sugerencia para agilizar la pagina?
+          </label>
+          <br />
+          <textarea id="comentarios" rows="10" cols="50"></textarea>
+          <br />
+          <input type="submit" />
+          <input type="reset" />
+        </form>
+      </section>
+      <!-- Footer -->
+      <footer class="footer">
+        <ul>
+          <li><a href="./page/contact.html">Contacto</a></li>
+          <li><a href="https://www.instagram.com" target="_blank">Seguinos en Instagram!</a></li>
+        </ul>
+      </footer>
+      <!-- Fin del footer  -->
+  </body>
+  </html>
