@@ -44,8 +44,8 @@ html {
   grid-area: header;
   grid-column-start: 1;
   grid-column-end: -1;
-   background-color: rgb(243,231,97);
-  color: black;
+   background-color: rgb(46, 44, 44);
+  color: white;
   font-size: 20px;
   font-family: Abel-Regular;
   font-weight: bold;
@@ -56,7 +56,7 @@ html {
   overflow: hidden;
   } 
  .header a{
-  color: black;
+  color: white;
   text-decoration: none;
   font-weight: bold;
   }
@@ -100,10 +100,10 @@ html {
   display: flex;
   justify-content: center;
   height: 100vh;
-  background-image: url(../assets/entrenamiento7.jpg) ;
+/*   background-image: url(../assets/entrenamiento7.jpg) ;
    background-repeat: no-repeat;
    background-size: cover;
-   background-position: center center;
+   background-position: center center; */
 }
 .img_principal { 
    position: absolute;
@@ -223,16 +223,17 @@ button {
   grid-column-start:1;
   grid-column-end: 4;
   grid-row: 4;
-  background-color: rgb(243,231,97);
-  color: black;
+  background-color: rgb(46, 44, 44);
+  color: white;
   font-family: Montserrat;
   font-size: 1rem;
   text-align: center;
+  height: 60px;
 
 }
 .footer a{
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .footer ul{
   list-style: none;
